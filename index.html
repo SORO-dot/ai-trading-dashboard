@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>SORO GOJO • AI Market Dashboard</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main>
+<header>
+  <div>
+    <h1>SORO GOJO</h1>
+    <p>AI-style adaptive paper analysis • 15m + higher-timeframe context</p>
+  </div>
+  <span id="status">STARTING</span>
+</header>
+
+<nav>
+  <button data-s="BTC" class="on">₿ BTC</button>
+  <button data-s="GOLD">◆ GOLD</button>
+</nav>
+
+<section class="price">
+  <div>
+    <small>LIVE REFERENCE PRICE</small>
+    <strong id="price">--</strong>
+    <p id="source">--</p>
+  </div>
+  <b id="badge">WAIT</b>
+</section>
+
+<section class="grid">
+<article>
+  <h2>Current Signal</h2>
+  <div id="side" class="big">WAIT</div>
+  <div class="rows">
+    <div>Entry <b id="entry">--</b></div>
+    <div>SL <b id="sl">--</b></div>
+    <div>BE trigger <b id="be">--</b></div>
+    <div>Dynamic TP <b id="tp">--</b></div>
+    <div>Score <b id="score">--</b></div>
+  </div>
+  <p id="reasons">Waiting for market data…</p>
+</article>
+
+<article>
+  <h2>Market Read</h2>
+  <div class="rows">
+    <div>4H Structure <b id="htf">--</b></div>
+    <div>15m Structure <b id="structure">--</b></div>
+    <div>CRT / Sweep <b id="crt">--</b></div>
+    <div>Liquidity <b id="liq">--</b></div>
+    <div>FVG / IFVG <b id="fvg">--</b></div>
+    <div>Flow <b id="flow">--</b></div>
+  </div>
+</article>
+</section>
+
+<article>
+  <div class="head"><h2>Signal History</h2><button id="clear">Clear</button></div>
+  <div class="table">
+    <table>
+      <thead><tr><th>Time</th><th>Market</th><th>Side</th><th>Entry</th><th>SL</th><th>TP</th><th>Result</th></tr></thead>
+      <tbody id="history"></tbody>
+    </table>
+  </div>
+  <small>Paper-analysis only. No orders are placed. History stays in this browser.</small>
+</article>
+
+<footer>
+  <small>Data can become STALE when a public feed is unavailable. Never treat a reference feed as an executable broker quote.</small>
+</footer>
+</main>
+<script src="app.js"></script>
+</body>
+</html>
