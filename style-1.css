@@ -1,0 +1,23 @@
+*{box-sizing:border-box}
+body{margin:0;background:#080d19;color:#edf2ff;font-family:system-ui,-apple-system,Segoe UI,sans-serif}
+main{max-width:1000px;margin:auto;padding:18px}
+header,.price,.head{display:flex;justify-content:space-between;align-items:center;gap:15px}
+h1{margin:0;font-size:28px;letter-spacing:.5px}
+h2{margin-top:0}
+p,small{color:#9eabc7}
+header span,#badge{background:#202b47;padding:8px 12px;border-radius:10px;font-weight:800}
+.price,article{background:#10182a;border:1px solid #293650;border-radius:16px;padding:18px;margin:16px 0}
+.price strong{display:block;font-size:34px;margin-top:5px}
+nav{display:flex;gap:10px;margin:18px 0}
+button{background:#151f35;color:#eef2ff;border:1px solid #33415f;border-radius:10px;padding:10px 15px;font-weight:800}
+button.on{background:#2c416f}
+.grid{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.grid article{margin:0 0 16px}
+.big{font-size:32px;font-weight:950;margin-bottom:8px}
+.rows div{display:flex;justify-content:space-between;gap:15px;padding:10px 0;border-bottom:1px solid #222d46}
+.rows div:last-child{border-bottom:0}
+.table{overflow:auto}
+table{width:100%;border-collapse:collapse;font-size:13px}
+th,td{text-align:left;padding:9px;border-bottom:1px solid #27334d;white-space:nowrap}
+footer{padding:4px 2px 25px}
+@media(max-width:700px){.grid{grid-template-columns:1fr}header{align-items:flex-start;flex-direction:column}}
